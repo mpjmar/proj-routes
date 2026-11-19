@@ -1,0 +1,23 @@
+<h2>Aula virtual</h2>
+<nav>
+  <a
+    routerLink="materiales"
+    routerLinkActive="class-css-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Materiales
+  </a>
+
+  <a
+    routerLink="avisos"
+    routerLinkActive="class-css-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Avisos
+  </a>
+
+  <a routerLink="/inicio">Inicio</a>
+  <a routerLink="../ayuda">Ayuda</a>
+</nav>
+<hr />
+<router-outlet />
