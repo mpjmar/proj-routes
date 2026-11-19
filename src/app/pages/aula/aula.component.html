@@ -3,7 +3,6 @@
   <a
     routerLink="materiales"
     routerLinkActive="class-css-active"
-    [routerLinkActiveOptions]="{ exact: true }"
   >
     Materiales
   </a>
@@ -11,13 +10,26 @@
   <a
     routerLink="avisos"
     routerLinkActive="class-css-active"
-    [routerLinkActiveOptions]="{ exact: true }"
   >
     Avisos
   </a>
 
-  <a routerLink="/inicio">Inicio</a>
-  <a routerLink="../ayuda">Ayuda</a>
+  <a
+    routerLink="/inicio"
+    routerLinkActive="class-css-active"
+  >
+    Inicio
+  </a>
+
+  <a
+    routerLink="../ayuda"
+    routerLinkActive="class-css-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Ayuda
+  </a>
 </nav>
+
 <hr />
+
 <router-outlet />
